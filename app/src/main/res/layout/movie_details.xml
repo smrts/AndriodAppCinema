@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="match_parent"
+    android:background="#3c3b3b">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="270dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/imageView" />
+
+        <TextView
+            android:text="Genre:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="19dp"
+            android:id="@+id/genreTitle" />
+
+        <TextView
+            android:text="TextView"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/genre"
+            android:layout_below="@+id/genreTitle"
+            android:layout_alignStart="@+id/genreTitle" />
+
+        <TextView
+            android:text="Length:"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_below="@+id/genre"
+            android:layout_alignStart="@+id/genre"
+            android:layout_marginTop="26dp"
+            android:id="@+id/lengthTitle" />
+
+        <TextView
+            android:text="TextView"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_width="wrap_content"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/length"
+            android:layout_below="@+id/lengthTitle"
+            android:layout_alignStart="@+id/lengthTitle" />
+
+        <TextView
+            android:text="IMDB Rating:"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_below="@+id/length"
+            android:layout_alignStart="@+id/length"
+            android:layout_marginTop="26dp"
+            android:id="@+id/imdbTitle" />
+
+        <TextView
+            android:text="TextView"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:id="@+id/imdb"
+            android:layout_below="@+id/imdbTitle"
+            android:layout_alignStart="@+id/imdbTitle" />
+
+        <TextView
+            android:text="Synopsis:"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="9dp"
+            android:id="@+id/synopsisTitle" />
+
+        <TextView
+            android:text="TextView"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/synopsis"
+            android:layout_below="@+id/synopsisTitle"
+            android:layout_alignStart="@+id/synopsisTitle" />
+
+        <Button
+            android:text="Watch Trailer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_orange_dark"
+            android:backgroundTint="@android:color/background_dark"
+            android:layout_marginBottom="40dp"
+            android:id="@+id/trailerButton"
+            android:layout_alignParentBottom="true"
+            android:layout_alignEnd="@+id/imageView"
+            android:layout_marginEnd="16dp"
+            android:onClick="watchTrailer"/>
+
+        <Button
+            android:text="Buy Tickets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_orange_dark"
+            android:backgroundTint="@android:color/background_dark"
+            android:id="@+id/button2"
+            android:layout_alignBaseline="@+id/trailerButton"
+            android:layout_alignBottom="@+id/trailerButton"
+            android:layout_alignEnd="@+id/imdbTitle" />
+
+    </RelativeLayout>
+</ScrollView>

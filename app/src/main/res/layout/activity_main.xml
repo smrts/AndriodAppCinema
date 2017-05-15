@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#585757"
+    tools:context="com.example.kilo.cinemaprojectfinal.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="260dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@mipmap/movie1"
+            android:id="@+id/movie1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="260dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@mipmap/movie2"
+            android:id="@+id/movie3"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/movie2" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="260dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@mipmap/movie3"
+            android:id="@+id/movie2"
+            android:layout_below="@+id/movie1"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="260dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@mipmap/movie4"
+            android:id="@+id/movie4"
+            android:layout_below="@+id/movie3"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/movie2" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="260dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@mipmap/movie5"
+            android:layout_below="@+id/movie2"
+            android:layout_alignParentStart="true"
+            android:id="@+id/movie5" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="260dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@mipmap/movie6"
+            android:layout_below="@+id/movie4"
+            android:id="@+id/movie6"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/movie2" />
+
+    </RelativeLayout>
+
+</ScrollView>

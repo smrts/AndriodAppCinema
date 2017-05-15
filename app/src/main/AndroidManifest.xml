@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kilo.cinemaprojectfinal">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".InsideOut" />
+        <activity android:name=".Snowden" />
+        <activity android:name=".Zootopia" />
+        <activity android:name=".Interstellar" />
+        <activity android:name=".BatVsSuper" />
+        <activity android:name=".TwelveYears" />
+        <activity android:name=".PaymentInfo" />
+        <activity android:name=".SeatSelection" />
+        <activity android:name=".AddOnsPage" />
+        <activity android:name=".PaymentMethod" />
+        <activity android:name=".ThankYouPage"></activity>
+    </application>
+
+</manifest>

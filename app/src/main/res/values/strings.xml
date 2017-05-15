@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Test Watch It</string>
+
+    <string-array name="cinema_names">
+        <item>Select a cinema</item>
+        <item>IOI City Mall</item>
+        <item>The Mines</item>
+        <item>NU Sentral</item>
+        <item>Midvalley</item>
+    </string-array>
+
+    <string-array name="dates">
+        <item>Select a date</item>
+        <item>1/3/2017</item>
+        <item>2/3/2017</item>
+        <item>3/3/2017</item>
+        <item>4/3/2017</item>
+        <item>5/3/2017</item>
+        <item>6/3/2017</item>
+        <item>7/3/2017</item>
+    </string-array>
+
+    <string-array name="time">
+        <item>Select a time</item>
+        <item>1:00 pm</item>
+        <item>1:20 pm</item>
+        <item>3:20 pm</item>
+        <item>4:50 pm</item>
+        <item>5:00 pm</item>
+        <item>6:15 pm</item>
+    </string-array>
+</resources>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_payment_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3c3b3b"
+    tools:context="com.example.kilo.cinemaprojectfinal.PaymentInfo">
+
+
+    <TextView
+        android:text="Total Price for Seats Booked:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:layout_marginTop="20dp"
+        android:id="@+id/seatsTitle"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="Add Ons:"
+        android:layout_width="wrap_content"
+        android:textSize="22dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seatsPrice"
+        android:textColor="@android:color/holo_orange_dark"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:text="Popcorn:"
+        android:id="@+id/popTitle"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/textView"
+        android:layout_toStartOf="@+id/confirmButton" />
+
+    <TextView
+        android:textColor="@android:color/holo_orange_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Drinks:"
+        android:id="@+id/drinksTitle"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/popTitle"
+        android:layout_alignStart="@+id/popTitle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_orange_dark"
+        android:inputType="number"
+        android:textSize="20dp"
+        android:id="@+id/numPop"
+        android:textColorHint="@android:color/holo_orange_dark"
+        android:hint="(No. of Popcorn)"
+        android:layout_alignBaseline="@+id/popTitle"
+        android:layout_alignBottom="@+id/popTitle"
+        android:layout_toEndOf="@+id/popTitle"
+        android:layout_marginStart="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_orange_dark"
+        android:inputType="number"
+        android:textSize="20dp"
+        android:id="@+id/numDrinks"
+        android:hint="(No. of Drinks)"
+        android:textColorHint="@android:color/holo_orange_dark"
+        android:layout_alignBaseline="@+id/drinksTitle"
+        android:layout_alignBottom="@+id/drinksTitle"
+        android:layout_alignStart="@+id/numPop" />
+
+    <Button
+        android:text="Confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirmButton"
+        android:layout_marginBottom="78dp"
+        android:gravity="center"
+        android:textColor="@android:color/holo_orange_dark"
+        android:backgroundTint="@android:color/background_dark"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:text="Grand Total"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="22dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/grandTotalTitle"
+        android:layout_marginBottom="73dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:layout_above="@+id/confirmButton"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="0.00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/grandTotal"
+        android:textSize="30sp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textStyle="normal|bold"
+        android:layout_marginStart="16dp"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5" />
+
+    <TextView
+        android:text="RM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textColor="@android:color/holo_orange_dark"
+        android:fontFamily="sans-serif"
+        android:textSize="30sp"
+        android:textStyle="normal|bold"
+        android:layout_marginBottom="17dp"
+        android:layout_above="@+id/confirmButton"
+        android:layout_toEndOf="@+id/drinksTitle" />
+
+    <TextView
+        android:text="RM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:id="@+id/textView13"
+        android:layout_above="@+id/textView"
+        android:layout_toStartOf="@+id/grandTotal" />
+
+    <TextView
+        android:text="0.00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:layout_marginTop="21dp"
+        android:id="@+id/seatsPrice"
+        android:layout_below="@+id/seatsTitle"
+        android:layout_alignStart="@+id/grandTotal" />
+
+</RelativeLayout>
